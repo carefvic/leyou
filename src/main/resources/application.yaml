@@ -1,0 +1,9 @@
+spring:
+ #数据源四大参数
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/leyou
+    username: root
+    password:
+server:
+  port: 8080
