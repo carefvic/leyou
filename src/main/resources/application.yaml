@@ -5,5 +5,22 @@ spring:
     url: jdbc:mysql://localhost:3306/leyou
     username: root
     password:
+
+#配置服务器端口
 server:
   port: 8080
+
+#配置mybatis
+mybatis:
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+  #指定映射文件
+  mapper-locations: mapper/*.xml
+  #别名
+  type-aliases-package: com.hezs.pojo
+
+#日志设置
+logging:
+  level:
+    com.hezs: debug
